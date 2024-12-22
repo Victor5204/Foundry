@@ -1,0 +1,14 @@
+﻿<Page x:Class="Foundry.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Авторизация">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Логин:" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtLogin" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Пароль:" Margin="0,0,0,10"/>
+            <PasswordBox x:Name="txtPassword" Width="200" Margin="0,0,0,10"/>
+            <Button Content="Войти" Width="100" Click="BtnLogin_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

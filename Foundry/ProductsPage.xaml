@@ -1,0 +1,19 @@
+﻿<Page x:Class="Foundry.ProductsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Продукция" Height="300">
+    <Grid>
+        <DataGrid x:Name="dgProducts" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Материал" Binding="{Binding Material.Name}"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Добавить" Click="BtnAdd_Click" Margin="0,0,10,0"/>
+            <Button Content="Редактировать" Click="BtnEdit_Click" Margin="0,0,10,0"/>
+            <Button Content="Удалить" Click="BtnDelete_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

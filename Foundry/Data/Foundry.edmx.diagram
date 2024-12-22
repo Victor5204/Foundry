@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="521738477b864c008dcaa235984bed8e" Name="Diagram1">
+        <EntityTypeShape EntityType="FoundryModel.Materials" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoundryModel.OrderDetails" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoundryModel.Orders" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoundryModel.Products" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoundryModel.Roles" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FoundryModel.Users" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="FoundryModel.FK__Products__Materi__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="FoundryModel.FK__OrderDeta__Order__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="FoundryModel.FK__OrderDeta__Produ__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="FoundryModel.FK__Orders__UserId__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="FoundryModel.FK__Users__RoleId__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

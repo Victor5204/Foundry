@@ -1,0 +1,19 @@
+﻿<Page x:Class="Foundry.OrdersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Заказы">
+    <Grid>
+        <DataGrid x:Name="dgOrders" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Заказ" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Пользователь" Binding="{Binding User.Login}"/>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Добавить" Click="BtnAdd_Click" Margin="0,0,10,0"/>
+            <Button Content="Редактировать" Click="BtnEdit_Click" Margin="0,0,10,0"/>
+            <Button Content="Удалить" Click="BtnDelete_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

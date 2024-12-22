@@ -1,0 +1,14 @@
+﻿<Page x:Class="Foundry.AddOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Добавить заказ">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Пользователь:" Margin="0,0,0,10"/>
+            <ComboBox x:Name="cmbUser" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Дата заказа:" Margin="0,0,0,10"/>
+            <DatePicker x:Name="dpOrderDate" Width="200" Margin="0,0,0,10"/>
+            <Button Content="Добавить" Width="100" Click="BtnAdd_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,16 @@
+﻿<Page x:Class="Foundry.AddProductPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Добавить продукцию">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Название:" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtName" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Материал:" Margin="0,0,0,10"/>
+            <ComboBox x:Name="cmbMaterial" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Количество:" Margin="0,0,0,10"/>
+            <TextBox x:Name="txtQuantity" Width="200" Margin="0,0,0,10"/>
+            <Button Content="Добавить" Width="100" Click="BtnAdd_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

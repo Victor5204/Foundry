@@ -1,0 +1,14 @@
+﻿<Page x:Class="Foundry.EditOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Редактировать заказ">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Пользователь:" Margin="0,0,0,10"/>
+            <ComboBox x:Name="cmbUser" Width="200" Margin="0,0,0,10"/>
+            <TextBlock Text="Дата заказа:" Margin="0,0,0,10"/>
+            <DatePicker x:Name="dpOrderDate" Width="200" Margin="0,0,0,10"/>
+            <Button Content="Сохранить" Width="100" Click="BtnSave_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
